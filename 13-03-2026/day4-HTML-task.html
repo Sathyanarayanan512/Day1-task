@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day4-HTML-task</title>
+    <link rel="stylesheet" href="formstyles.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="sn-logo.jpg"
+        alt="sn-logo"
+        height="50"
+        width="50"
+      />
+      <header><h1>SN Course Feedback Form</h1></header>
+    </header>
+    <main>
+      <!-- 1. <b> and <strong> -->
+    <div>
+      <p>
+        <h3>!!! IMPORTANT !!!</h3>
+        The form below is to acquire feedback from the corresponding
+        <b>learner</b> regarding the <strong>effiency</strong> of the course,
+        trainers, schedules, engaged approaches and placements.
+      
+      <!-- 2. <i> and <em> -->
+      
+        This is to make sure that the learner is attending the form
+        <i>genuinely</i> and in concern of <em>future learners</em> of this
+        organization
+      
+      <!-- 3. <u>, <mark> and <small> -->
+      
+        The form once submitted <small>cannot be edited back</small> and if
+        <u>not submitted</u> can lead to <em>incompletion</em> of the course.
+        So, kindly make sure <mark>submission</mark> as this is
+        <mark>no-time-defined</mark> form and
+        <strong>may expire anytime.</strong>
+      
+      
+        Kindly fill the <a href="mini-form.html" target="_blank">Consenting form</a> before
+        filling feedback.
+      </p>
+      </div>
+      <form>
+        <label>Name:</label><br />
+        <input type="text" placeholder="Enter your name" required /><br /><br />
+
+        <label>Email:</label><br />
+        <input
+          type="email"
+          placeholder="Enter your email"
+          required
+        /><br /><br />
+
+        <label>Course Name:</label><br />
+        <input type="text" placeholder="Enter course name" /><br /><br />
+
+        <label>Trainer Name:</label><br />
+        <input type="text" placeholder="Enter trainer name" /><br /><br />
+
+        <label>How would you rate the course content?</label><br />
+        <input type="radio" name="content" /> Excellent
+        <input type="radio" name="content" /> Good
+        <input type="radio" name="content" /> Average
+        <input type="radio" name="content" /> Poor <br /><br />
+
+        <label>How was the trainer's teaching quality?</label><br />
+        <input type="radio" name="trainer" /> Excellent
+        <input type="radio" name="trainer" /> Good
+        <input type="radio" name="trainer" /> Average
+        <input type="radio" name="trainer" /> Poor <br /><br />
+
+        <label>Which aspects of the course did you like?</label><br />
+        <input type="checkbox" /> Course Content<br />
+        <input type="checkbox" /> Practical Sessions<br />
+        <input type="checkbox" /> Trainer Explanation<br />
+        <input type="checkbox" /> Learning Materials<br />
+        <br />
+
+        <label>Was the course duration sufficient?</label><br />
+        <input type="radio" name="duration" /> Yes
+        <input type="radio" name="duration" /> No <br /><br />
+
+        <label>Additional Comments:</label><br />
+        <textarea
+          rows="4"
+          cols="40"
+          placeholder="Write your feedback here"
+        ></textarea>
+        <br /><br />
+
+        <button type="submit">Submit Feedback</button>
+        <button type="reset">Clear</button>
+      </form>
+    </main>
+    <footer>
+      <strong>
+        <p>© 2026 SN Intitute of Technologies</p>
+        <p>Contact: sn@institute.com</p>
+      </strong>
+    </footer>
+  </body>
+</html>

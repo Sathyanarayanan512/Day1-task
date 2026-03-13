@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="formstyles.css">
+  </head>
+  <body>
+    <header>
+      <img
+        src="sn-logo.jpg"
+        alt="sn-logo"
+        height="50"
+        width="50"
+      />
+      <h1>SN Consenting Form</h1>
+    </header>
+    <form>
+      <label>Name:</label>
+      <input type="text" placeholder="Enter your name" required />
+      <label>Email:</label>
+      <input type="email" placeholder="Enter your mailid" required />
+      <label>Password:</label>
+      <input type="password" placeholder="Enter your password" required />
+      <label>Shift:</label>
+      <input type="radio" name="shift" /><label>Morning</label>
+      <input type="radio" name="shift" /><label>Afternoon</label>
+      <input type="checkbox" /><label
+        >I consent for providing genuine feedback on my course experience</label
+      >
+      <button
+        onclick="
+          alert(
+            'Your consent has been recognized. Now go to the feedback form.',
+          )
+        "
+      >
+        Submit
+      </button>
+    </form>
+    <footer>
+      <strong>
+        <p>© 2026 SN Institue of Technologies</p>
+        <p>Contact: sn@institute.com</p>
+      </strong>
+    </footer>
+  </body>
+</html>
