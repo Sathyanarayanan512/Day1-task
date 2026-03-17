@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup/Login</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 style="font-family: arial; font-size: 60px; color: azure;">Sigup/Login</h1>
+      <nav>
+        <ul>
+          <li><a href="#login">Login</a></li>
+          <li><a href="registerform.html">Registration</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="signup">
+        <h1>Sign up form</h1>
+        <form action="submitted.html" method="post">
+          <label for="uname">Name: </label>
+          <input id="uname" type="text" placeholder="Enter Username" required />
+          <label for="pwd">Password: </label>
+          <input id="pwd" type="password" placeholder="Enter Password" required/>
+          <label for="mailid">Email: </label>
+          <input for="mailid" type="email" placeholder="Enter email" required/>
+          <input type="submit" id="submit" value="Submit" />
+        </form>
+      </div>
+
+      <div id="login">
+        <h1>Login form</h1>
+        <form action="submitted.html" method="post">
+          <label for="uname">Name: </label>
+          <input id="uname" type="text" placeholder="Enter Username" required/>
+          <label for="pwd">Password: </label>
+          <input id="pwd" type="password" placeholder="Enter Password" required/>
+          <label for="mailid">Email: </label>
+          <input for="mailid" type="email" placeholder="Enter email" required />
+          <input type="submit" id="submit" value="Submit" />
+        </form>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

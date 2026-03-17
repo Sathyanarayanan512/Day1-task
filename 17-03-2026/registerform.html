@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+      <h1 style="font-family: arial; font-size: 60px; color: azure;">Register</h1>
+      <nav>
+        <ul>
+          <li><a href="day6-HTML-task.html">Signup/Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="reg">
+        <h1>Registration form</h1>
+        <form action="submitted.html" method="post">
+          <label for="uname">Name: </label>
+          <input id="uname" type="text" placeholder="Enter Username" required />
+          <label for="pwd">Password: </label>
+          <input id="pwd" type="password" placeholder="Enter Password" required/>
+          <label for="mailid">Email: </label>
+          <input for="mailid" type="email" placeholder="Enter email" required/>
+          <label for="gender">Gender: </label>
+          <input type="radio" name="gender" style="display: inline; margin: 10px 0px 20px 0px;"><label style="display: inline;">Male</label>
+          <input type="radio" name="gender" style="display: inline; margin: 10px 0px 20px 0px;"><label style="display: inline;">Female</label>
+          <label for="uage">Age:</label>
+          <input id="uage" type="number" min="18">
+          <label for="check">Hobbies: </label>
+          <input type="checkbox" id="check" style="display: inline; margin-bottom: 10px;"><label for="check" style="display: inline;">Reading Books</label><br>
+          <input type="checkbox" id="check" style="display: inline; margin-bottom: 10px;"><label for="check" style="display: inline;">Writing Books</label><br>
+          <input type="checkbox" id="check" style="display: inline; margin-bottom: 30px;"><label for="check" style="display: inline;">Drawing</label><br>
+          <input type="submit" id="submit" value="Submit" />
+        </form>
+      </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
