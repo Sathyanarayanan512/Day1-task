@@ -1,0 +1,86 @@
+
+header{
+    background-color: lightpink;
+    color: black;
+    text-align: center;
+    font-family: monospace;
+    font-size: 25px;
+    padding: 15px;
+    margin: 5px 20px;
+    border-radius: 5% 20%;
+}
+nav ul{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 30px;
+    list-style-type: none;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 65%;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+a:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+main{
+    background-color: blanchedalmond;
+    border-radius: 10% 10% 0% 0%;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    flex-direction: column;
+}
+.box{
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 8px;
+    width: 400px;
+    height: 150px;
+    padding: 25px;
+    margin: 15px;
+    transition: transform 0.3s ease;
+}
+.box:hover{
+    transform: scale(1.1);
+}
+.box h3{
+    font-size: 18px;
+    font-family: verdana;
+    margin-left: 10px;
+}
+.box p{
+    font-size: 15px;
+    font-family: verdana;
+    text-align: center;
+}
+#fonts p{
+    font-family: 'courier new';
+}
+#backgrounds{
+    background: url('C:/Users/bsnsa/OneDrive/Pictures/bigbrainwojak.jpg') no-repeat;
+    background-size: 150px;
+    height: 200px;
+    background-position: bottom center;
+    margin: 0px;
+}
+#backgroundscolor{
+    background-color: white;
+    margin: 15px;
+}
+#bold{
+    font-weight: bold;
+}
+#italic{
+    font-style: italic;
+}
+#underlined{
+    text-decoration: underline;
+}
