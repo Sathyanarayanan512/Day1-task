@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <h1 id="heading"></h1>
+    </header>
+    <form id="form1"> 
+        <label for="uname">Username: </label>
+        <input type="text" id="uname">
+        <label for="age">Age: </label>
+        <input type="number" id="age">
+        <button type="button" onclick="displayData()">Submit</button>
+    </form>
+    <div id="collectedData"></div>
+    <div id="box"><p id="text">CSK</p></div>
+    <script> // A sample simple script
+        document.getElementById('heading').textContent="Hello JS";
+        document.getElementById('header').style="background-color: lightcoral; font-family: verdana; display: flex; align-items: center; justify-content: center; border-radius:8px; margin: 0 500px;";
+        function displayData(){
+            const username=document.getElementById('uname').value;
+            const age=document.getElementById('age').value;
+            document.getElementById('collectedData').textContent=`Username: ${username}, Age: ${age} \n (look at the console too)`;
+            console.log("Username: "+username+", Age: "+age);
+        }
+        /*
+        This is a multi line comment:
+        the username and age are displayed both in the div container and in the console too.
+        */
+    </script>
+</body>
+</html>
