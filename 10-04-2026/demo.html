@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 id="heading"></h1>
+    </header>
+
+    <div>
+        <p></p>
+    </div>
+    
+    <footer></footer>
+    <script>
+        let heading= document.getElementById('heading');
+        heading.textContent+='Day23 - JS - Task';
+        heading.style.cssText+='text-align: center; font-family: verdana; font-size: 45px;';
+
+        let division = document.getElementsByTagName('div');
+        division[0].style.cssText+='margin: 10px 500px; padding: 50px; box-sizing: border-box; font-family: monospace; font-size: 30px; color: black; background-color: lightgreen; width: 500px; height: 500px; border-radius: 20px; display: flex; align-items: center; justify-content: center;';
+
+        let para1= document.querySelector('p');
+        para1.style.cssText+='font-weight:bold;';
+        para1.innerHTML+='Name: Sathyanarayanan.B' + '<br>' + 'Age: 23' + '<br>' + 'Status: Jobless';
+    </script>
+</body>
+</html>
