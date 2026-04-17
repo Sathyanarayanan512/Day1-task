@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #movieList{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <ul id="movieList"></ul>
+    <script>
+        let ul = document.getElementById('movieList');
+        let movieNames = ["Movie 1", "Movie 2", "Movie 3"];
+        let imgArray = [];
+        for (let i=0; i<movieNames.length; i++){
+            imgArray.push("cinema"+i+".jpg");
+            console.log(imgArray[i]);
+            let li = document.createElement('li');
+            let div = document.createElement('div');
+            let img = document.createElement('img');
+            let p = document.createElement('p');
+            //img.src = "cinema"+i+".jpg";
+            img.src = imgArray[i];
+            img.width = "300";
+            img.height = "300";
+            div.appendChild(img);
+            p.textContent = movieNames[i];
+            p.style.textAlign = "center";
+            p.style.cssText += "font-weight: bold; font-size: 20px; font-family: verdana;"
+            div.appendChild(p);
+            li.appendChild(div);
+            ul.appendChild(li);
+        }
+    </script>
+</body>
+</html>

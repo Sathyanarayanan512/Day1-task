@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="search">Brand : </label>
+    <input type="text" id="search" placeholder="Enter Brand Name">
+    <ul id="brand-names">
+        <li>Godrej</li>
+        <li>Whirlpool</li>
+        <li>Panasonic</li>
+        <li>Sony</li>
+        <li>Samsung</li>
+        <li>LG</li>
+    </ul>
+    <script>
+        let ul = document.getElementById('brand-names');
+        let li = ul.querySelectorAll('li');
+        let input = document.getElementById('search');
+        input.addEventListener('input', function (){
+            let input1 = input.value;
+            for(let i = 0; i<li.length; i++){
+                li[i].hidden = false;
+                if(!(li[i].textContent.toLowerCase().includes(input1.toLowerCase()))){
+                    li[i].hidden = true;
+                    console.log(input1);
+                }
+            }
+        })
+    </script>
+</body>
+</html>
