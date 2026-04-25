@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Count</title>
+    <style>
+        header{
+            font-family: verdana;
+            background-color: lightgreen;
+            border-radius: 10%;
+            font-size: 20px;
+            text-align: center;
+            padding: 10px;
+        }      
+        ul{
+            display: flex;
+            list-style-type: none;
+            gap: 30px;
+            justify-content: center;
+        }
+        nav ul{
+            padding: 20px;
+            justify-content: end;
+            font-size:15px;
+            font-weight: bold;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color:black;
+        }
+        p{
+            text-align: center;
+            font-weight: bold;
+            font-family: verdana;
+        }
+        button{
+            padding: 10px;
+            margin: 2px;
+            font-family: verdana;
+            background-color: lightsteelblue;
+            border: none;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #cart{
+            background-color: greenyellow;
+            width:150px;
+            border-radius: 2px;
+            font-size: 20px;
+            text-align: start;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            font-family:verdana;
+            position: sticky;
+            top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shop Online</h1>
+        <nav>
+            <ul>
+                <li><a href="#stationary-product-list">Stationaries</a></li>
+                <li><a href="#clothing-product-list">Clothing</a></li>
+                <li><a href="#accessory-product-list">Accessories</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <div id="cart"><b><img src="cart.png" width="80px" height="50px">(<span id="product-count">0</span>)</b></div>
+    <main>
+        <ul id="stationary-product-list">
+            <li>
+                <div>
+                    <img src="blue-ball-point-pen.jpg" width="200" height="200">
+                    <p>Blue Ball Point Pen</p>
+                    <button class="add-to-cart">Add To Cart</button>
+                    <button class="remove-from-cart">Remove</button>
+                </div>
+            </li>
+            
+            <li>
+                <div>
+                    <img src="hero-ink-pen.jpg" width="200" height="200">
+                    <p>Hero Ink Pen</p>
+                    <button class="add-to-cart">Add To Cart</button>
+                    <button class="remove-from-cart">Remove</button>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <img src="apsara-pencil.webp" width="200" height="200">
+                    <p>Apsara Pencil</p>
+                    <button class="add-to-cart">Add To Cart</button>
+                    <button class="remove-from-cart">Remove</button>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <img src="eraser.webp" width="200" height="200">
+                    <p>Eraser</p>
+                    <button class="add-to-cart">Add To Cart</button>
+                    <button class="remove-from-cart">Remove</button>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <img src="ruler.jpg" width="200" height="200">
+                    <p>Ruler</p>
+                    <button class="add-to-cart">Add To Cart</button>
+                    <button class="remove-from-cart">Remove</button>
+                </div>
+            </li>
+        </ul><br><br>
+        <ul id="clothing-product-list">
+            <li>
+                <div>
+                    <img src="formal-shirt.jpg" width="200" height="200">
+                    <p>Formal Shirt</p>
+                    <button class="add-to-cart">Add To Cart</button>
+                    <button class="remove-from-cart">Remove</button>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <img src="casual-shirt.png" width="200" height="200">
+                    <p>Casual Shirt</p>
+                    <button class="add-to-cart">Add To Cart</button>
+                    <button class="remove-from-cart">Remove</button>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <img src="cotton-pant.webp" width="200" height="200">
+                    <p>Cotton Pant</p>
+                    <button class="add-to-cart">Add To Cart</button>
+                    <button class="remove-from-cart">Remove</button>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <img src="jeans-pant.webp" width="200" height="200">
+                    <p>Jeans Pant</p>
+                    <button class="add-to-cart">Add To Cart</button>
+                    <button class="remove-from-cart">Remove</button>
+                </div>
+            </li>
+        </ul><br><br>
+        <ul id="accessory-product-list">
+            <li>
+                <div>
+                    <img src="g-shock-watch.jpg" width="200" height="200">
+                    <p>G-Shock Watch</p>
+                    <button class="add-to-cart">Add To Cart</button>
+                    <button class="remove-from-cart">Remove</button>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <img src="leather-belt.avif" width="200" height="200">
+                    <p>Leather Belt</p>
+                    <button class="add-to-cart">Add To Cart</button>
+                    <button class="remove-from-cart">Remove</button>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <img src="black-shoes.png" width="200" height="200">
+                    <p>Black Shoes</p>
+                    <button class="add-to-cart">Add To Cart</button>
+                    <button class="remove-from-cart">Remove</button>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <img src="black-socks.webp" width="200" height="200">
+                    <p>Black Socks</p>
+                    <button class="add-to-cart">Add To Cart</button>
+                    <button class="remove-from-cart">Remove</button>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <img src="coolers.jpg" width="200" height="200">
+                    <p>Coolers</p>
+                    <button class="add-to-cart">Add To Cart</button>
+                    <button class="remove-from-cart">Remove</button>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <footer></footer>
+    <script>
+        let productCount = document.getElementById('product-count');
+        let addToCartButtons = document.getElementsByClassName('add-to-cart');
+        let removeFromCartButtons = document.getElementsByClassName('remove-from-cart');
+        for(let i =0; i<addToCartButtons.length; i++){
+            addToCartButtons[i].addEventListener('click', function(){
+                productCount.textContent = updateCart(function(a){
+                    return a+1;
+                });
+                
+            });
+        }
+        for(let i =0; i<removeFromCartButtons.length; i++){
+            removeFromCartButtons[i].addEventListener('click', function(){
+                productCount.textContent = updateCart(function(a){
+                    return a>0? a-1 : 0;
+                });
+            });
+        }
+        function updateCart(callBack){
+            let count = Number(productCount.textContent);
+            count = callBack(count);
+            return count;
+        }
+    </script>
+</body>
+</html>
