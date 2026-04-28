@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>You can access the local storage and session storage now</h1>
+    </header>
+    <main>
+        <h2><i>Press F12</i></h2>
+        <div id="local">
+            <label>Key: </label>
+            <input type="text" id="add-local-key">
+            <label>Value: </label>
+            <input type="text" id="add-local-value">
+            <button id="add-to-local-storage">Add to Local Storage</button><br><br>
+            <label>Key: </label>
+            <input type="text" id="remove-local-pair">
+            <button id="remove-from-local-storage">Remove</button>
+        </div>
+        <br><br><br><br>
+        <div id="session">
+            <label>Key: </label>
+            <input type="text" id="add-session-key">
+            <label>Value: </label>
+            <input type="text" id="add-session-value">
+            <button id="add-to-session-storage">Add to Session Storage</button><br><br>
+            <label>Key: </label>
+            <input type="text" id="remove-session-pair">
+            <button id="remove-from-session-storage">Remove</button>
+        </div>
+        <script>
+            // 2. Save and Remove a value in localStorage.
+            let localKey=document.getElementById('add-local-key');
+            let localValue=document.getElementById('add-local-value');
+            let addLocalButton = document.getElementById('add-to-local-storage');
+            addLocalButton.addEventListener('click', () => localStorage.setItem(localKey.value, localValue.value));
+
+            let removeLocalKey = document.getElementById("remove-local-pair");
+            let removeLocalButton = document.getElementById('remove-from-local-storage');
+            removeLocalButton.addEventListener('click', () => localStorage.removeItem(removeLocalKey.value));
+
+
+            // 3. Save and Remove a value in sessionStorage.
+            let sessionKey=document.getElementById('add-session-key');
+            let sessionValue=document.getElementById('add-session-value');
+            let addSessionButton = document.getElementById('add-to-session-storage');
+            addSessionButton.addEventListener('click', () => sessionStorage.setItem(sessionKey.value, sessionValue.value));
+
+            let removeSessionKey = document.getElementById("remove-session-pair");
+            let removeSessionButton = document.getElementById('remove-from-session-storage');
+            removeSessionButton.addEventListener('click', () => sessionStorage.removeItem(removeSessionKey.value));
+        </script>
+        
+    </main>
+</body>
+</html>
